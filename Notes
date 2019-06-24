@@ -1,0 +1,30 @@
+1) Type Coercion is JS' way of converting values
+2) === strictly equal operator
+    == loose equality operator handles type coercion
+3) False Values Are
+  -null
+  -NaN
+  -0
+  --0
+  -undefined
+  -false
+  -''
+4) Any non-primitive is true
+5) [1,2,3] == [1,2,3] is false because of identity
+6) Leaving var off of a variable declaration dedclares the variable in global scope
+- variable = 6
+7) the for/in statement allows for itaeration over an objects properties
+  var description = "";
+  var person = {fname:"Paul", lname:"Ken", age:18};
+  for (var x in person){
+      description += person[x] + " ";
+  } // description = 'Paul Ken 18 '
+  
+8) var pets = ["cat", "dog", "hamster", "hedgehog"];
+for (var pet of pets){
+    console.log(pet);
+} // myPets = 'cat dog hamster hedgehog '
+
+9)  JavaScript combines instantiation and inheritance into a single concept: a 'prototype'.
+Every JavaScript object has a 'prototype'. When you go to access a property on an object 
+that doesn't exist on the actual object, the interpreter will look at its prototype.
